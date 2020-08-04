@@ -85,7 +85,7 @@ function sendTransaction(isAdding) {
 
   // validate form
   if (nameEl.value === "" || amountEl.value === "") {
-    errorEl.textContent = "Missing Information";
+    errorEl.textContent = "Please Enter Transaction Name and Amount";
     return;
   }
   else {
