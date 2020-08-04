@@ -144,10 +144,18 @@ function sendTransaction(isAdding) {
   });
 }
 
+//need a delete function
+
+
+
 document.querySelector("#add-btn").onclick = function() {
   sendTransaction(true);
 };
 
 document.querySelector("#sub-btn").onclick = function() {
   sendTransaction(false);
+};
+
+document.querySelector("#clear-btn").onclick = function() {
+ //need code here;
 };
