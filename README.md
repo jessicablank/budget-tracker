@@ -27,7 +27,7 @@ Users can "install" this application for a native-like experience:
 ![](/public/Demonstration.gif)
 
 Homepage with data over time:
-![](/public/homepage-with-data.PNG)
+![](/public/homepage-with-data.png)
 
 
 ## Tests
