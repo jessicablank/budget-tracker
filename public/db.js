@@ -68,5 +68,7 @@ function checkDatabase() {
     };
 }
 
+//And a delete?
+
 // listen for app coming back online
 window.addEventListener("online", checkDatabase);
