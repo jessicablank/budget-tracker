@@ -1,6 +1,5 @@
 let transactions = [];
 let myChart;
-let clear = document.getElementById("clear-all");
 
 fetch("/api/transaction")
   .then(response => {
@@ -146,7 +145,6 @@ function sendTransaction(isAdding) {
 }
 
 // Delete all 
-
 function clearTransactions() {
   const deleteTransactions = document.getElementById("tbody");
   deleteTransactions.innerHTML = "";

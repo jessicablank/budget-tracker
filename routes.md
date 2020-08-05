@@ -10,7 +10,7 @@
 * Method: POST
 * Mongoose: insertMany
 * db.js Function: checkDatabase()
-* Description: Gets multiple transactions in json format after the browser has back online. 
+* Description: Gets multiple transactions in json format after the browser is back online. 
 
 ## /api/transaction
 * Method: GET
@@ -18,10 +18,11 @@
 * Description: Find all transactions in the database and post in order from newest to oldest
 
 
-## /api/transaction/bulk
-* Method: GET
-* Mongoose: deleteMany
-* Description: Delete all the transactions currently stored in the collection
+## /api/transaction
+* Method: DELETE
+* Mongoose: remove
+* Index.js Functions: ClearButton(), Clear Transactions()
+* Description: Delete all the transactions currently stored in the collection.
 
 # HTML Routes
 
