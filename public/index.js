@@ -71,7 +71,7 @@ function populateChart() {
         datasets: [{
             label: "Total Over Time",
             fill: true,
-            backgroundColor: "#6666ff",
+            backgroundColor: "#008080",
             data
         }]
     }
@@ -144,8 +144,13 @@ function sendTransaction(isAdding) {
   });
 }
 
-//need a delete function
+// Delete all function
+function deleteAll(){
+  // const transactions = document.getElementById
+  // transactions.innerHTML = "";
+  
 
+}
 
 
 document.querySelector("#add-btn").onclick = function() {
