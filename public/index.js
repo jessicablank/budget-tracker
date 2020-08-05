@@ -145,10 +145,10 @@ function sendTransaction(isAdding) {
 }
 
 // Delete all function
-function deleteAll(){
+function clearAll(){
   // const transactions = document.getElementById
   // transactions.innerHTML = "";
-  
+  console.log("clear-all button clicked")
 
 }
 
@@ -162,5 +162,6 @@ document.querySelector("#sub-btn").onclick = function() {
 };
 
 document.querySelector("#clear-btn").onclick = function() {
- //need code here;
+ clearAll();
+ 
 };
