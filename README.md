@@ -24,10 +24,10 @@ Run `npm i` to install [npm](https://www.npmjs.com/) dependencies.
 
 Users can "install" this application for a native-like experience:
 
-![](/public/Demonstration.gif)
+![](https://github.com/jessicablank/budget-tracker/blob/master/public/pictures/Demonstration.gif)
 
 Homepage with data over time:
-![](/public/homepage-with-data.png)
+![](https://github.com/jessicablank/budget-tracker/blob/master/public/pictures/homepage-with-data.PNG)
 
 
 ## Tests
