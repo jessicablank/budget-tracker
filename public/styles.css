@@ -6,7 +6,6 @@ body {
 button, input {
   font-size: 100%;
   font-family: Arial;
-  color: white;
 }
 
 table {
@@ -15,14 +14,18 @@ table {
 
 #sub-btn{
   background-color: darkslategray;
+  color: white;
 }
 
 #clear-btn{
+  margin: 10px;
   background-color: firebrick;
+  color: white;
 }
 
 #add-btn{
   background-color: forestgreen;
+  color: white;
 }
 
 td, th {
@@ -33,6 +36,9 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+tr:nth-child(odd) {
+  background-color: #eeeded;
 }
 
 .error {
@@ -49,6 +55,8 @@ tr:nth-child(even) {
 .total {
   font-size: 150%;
   text-decoration: underline;
+  background-color: teal;
+  color: white;
 }
 
 .form {
