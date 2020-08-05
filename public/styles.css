@@ -6,15 +6,28 @@ body {
 button, input {
   font-size: 100%;
   font-family: Arial;
+  color: white;
 }
 
 table {
   width: 100%;
 }
 
+#sub-btn{
+  background-color: darkslategray;
+}
+
+#clear-btn{
+  background-color: firebrick;
+}
+
+#add-btn{
+  background-color: forestgreen;
+}
+
 td, th {
   border: 1px solid #dddddd;
-  text-align: left;
+  text-align: center;
   padding: 8px;
 }
 
