@@ -1,5 +1,6 @@
 console.log("Hello from your service worker!");
 
+//create variable for cache
 const CACHE_NAME = "static-cache-v2";
 const DATA_CACHE_NAME = "data-cache-v1";
 
@@ -9,11 +10,13 @@ const iconFiles = iconSizes.map(
 );
 
 const staticFilesToPreCache = [
+  "/",
  "/index.html",
+ "/styles.css",
  "/manifest.webmanifest",
  ].concat(iconFiles);
 
- // install
+ // install sw
 self.addEventListener("install", function(evt) {
   evt.waitUntil(
 caches.open(CACHE_NAME).then(cache => {
@@ -25,7 +28,7 @@ caches.open(CACHE_NAME).then(cache => {
   self.skipWaiting();
 });
 
-// activate
+// when the sw activates, remove any outdated caches
 self.addEventListener("activate", function(evt) {
   evt.waitUntil(
     caches.keys().then(keyList => {
@@ -43,7 +46,7 @@ self.addEventListener("activate", function(evt) {
   self.clients.claim();
 });
 
-// fetch
+// whenever the client triggers fetch, respond from cache falling back to the network
 self.addEventListener("fetch", function(evt) {
   const {url} = evt.request;
   if (url.includes("/all") || url.includes("/find")) {

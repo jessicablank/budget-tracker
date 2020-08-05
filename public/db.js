@@ -40,7 +40,6 @@ function checkDatabase() {
   // open a transaction on your pending db
   // access your pending object store
     // get all records from store and set to a variable
-    // const getAll = ??
   const getAll = objectStore.getAll();
    
     getAll.onsuccess = function () {

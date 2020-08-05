@@ -1,5 +1,6 @@
 let transactions = [];
 let myChart;
+let clear = document.getElementById("clear-all");
 
 fetch("/api/transaction")
   .then(response => {
@@ -25,7 +26,7 @@ function populateTotal() {
 }
 
 function populateTable() {
-  let tbody = document.querySelector("#tbody");
+  let tbody = document.querySelector("tbody");
   tbody.innerHTML = "";
 
   transactions.forEach(transaction => {
@@ -144,13 +145,29 @@ function sendTransaction(isAdding) {
   });
 }
 
-// Delete all function
-function clearAll(){
-  // const transactions = document.getElementById
-  // transactions.innerHTML = "";
-  console.log("clear-all button clicked")
+// Delete all 
 
+function clearTransactions() {
+  const deleteTransactions = document.getElementById("tbody");
+  deleteTransactions.innerHTML = "";
+  location.reload();
 }
+
+function clearButton () {
+    fetch("/api/transaction", {
+      method: "DELETE"
+    })
+      .then(function(response) {
+        if (response.status !== 200) {
+          console.log("Looks like there was a problem. Status Code: " + response.status);
+          return;
+        }
+        clearTransactions();
+      })
+      .catch(function(err) {
+        console.log("Fetch Error :-S", err);
+      });
+  }
 
 
 document.querySelector("#add-btn").onclick = function() {
@@ -162,6 +179,6 @@ document.querySelector("#sub-btn").onclick = function() {
 };
 
 document.querySelector("#clear-btn").onclick = function() {
- clearAll();
- 
+  clearButton();
 };
+

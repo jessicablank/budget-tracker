@@ -3,13 +3,14 @@
 ## /api/transaction
 * Method: POST
 * Mongoose: create
-* Index.js Functions: 
+* Index.js Functions: fetch for populateTotal(), populateTable(), populateChart()
 * Description: creates single transaction json body
 
 ## /api/transaction/bulk
 * Method: POST
 * Mongoose: insertMany
-* Description: Gets multiple transactions in json format
+* db.js Function: checkDatabase()
+* Description: Gets multiple transactions in json format after the browser has back online. 
 
 ## /api/transaction
 * Method: GET
@@ -20,7 +21,7 @@
 ## /api/transaction/bulk
 * Method: GET
 * Mongoose: deleteMany
-* Description: Delete all te 
+* Description: Delete all the transactions currently stored in the collection
 
 # HTML Routes
 
