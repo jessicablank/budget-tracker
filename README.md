@@ -26,7 +26,8 @@ Users can "install" this application for a native-like experience:
 
 ![](https://github.com/jessicablank/budget-tracker/blob/master/public/pictures/Demonstration.gif)
 
-Homepage with data over time:
+Mobile Display:
+
 ![](https://github.com/jessicablank/budget-tracker/blob/master/public/pictures/homepage-with-data.PNG)
 
 
