@@ -4,7 +4,7 @@ console.log("Hello from your service worker!");
 const CACHE_NAME = "static-cache-v2";
 const DATA_CACHE_NAME = "data-cache-v1";
 
-const iconSizes = ["192", "512"];
+const iconSizes = ["16","32","36","48","57","60","70","72","76","96","114","120","144","150","152","180","192","310","512"];
 const iconFiles = iconSizes.map(
  (size) => `/icons/icon-${size}x${size}.png`
 );
