@@ -1,7 +1,7 @@
 # Budget Tracker
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[Deployed on Heroku](https://mysterious-anchorage-52189.herokuapp.com/)
+[Deployed on Heroku: https://mysterious-anchorage-52189.herokuapp.com/](https://mysterious-anchorage-52189.herokuapp.com/)
 
 ## Description:  
 A Progressive Web Application (PWA) demonstrating the use of the Chrome Browser and IndexedDB API to store transactions entered by the user when the browser is offline and "synced" when the browser comes back online. 
